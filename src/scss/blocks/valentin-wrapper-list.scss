@@ -1,0 +1,221 @@
+.valentin-wrapper-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    .slick-slide {
+        @media (max-width: 1023px) {
+            display: flex;
+            flex-wrap: wrap;
+            picture {
+                // width: 100% !important;
+            }
+            .valentin-wrapper-list__bottom {
+                // width: 100% !important;
+            }
+        }
+    }
+    .item {
+        max-width: calc(100% / 4 - 20px);
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        margin-bottom: 20px;
+        & > div {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        picture {
+            display: flex;
+            position: relative;
+            width: 100%;
+            height: 410px;
+            & > img {
+                width: 100%;
+                object-fit: cover;
+            }
+            @media (max-width: 1919px) {
+                height: 213px;
+            }
+            & > div {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        @media (max-width: 1919px) {
+            max-width: calc(100% / 4 - 12px);
+            margin-bottom: 10px;
+        }
+        @media (max-width: 1023px) {
+            margin: 0 4px;
+            height: auto;
+            margin-bottom: 0;
+        }
+    }
+    .slick-slide {
+        & > {
+            div {
+                @media (max-width: 1023px) {
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1023px) {
+        margin: 0 -4px;
+    }
+}
+
+.valentin-wrapper-list__bottom {
+    padding: 30px;
+    height: auto;
+    @media (max-width: 1919px) {
+        padding: 20px;
+    }
+}
+
+.valentin-wrapper-list__row {
+    display: flex;
+    justify-content: space-between;
+    &:first-child {
+        margin-bottom: 20px;
+        @media (max-width: 1919px) {
+            flex-direction: column;
+            height: 100%;
+        }
+    }
+    &:nth-child(2) {
+        margin-top: auto;
+        @media (max-width: 1023px) {
+            display: none;
+        }
+    }
+}
+
+.valentin-wrapper-list__row-mobile {
+    display: none;
+    @media (max-width: 1023px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
+
+.valentin-wrapper-list__name {
+    font-family: $font-add;
+    font-weight: 300;
+    font-size: 16px;
+    @media (max-width: 1919px) {
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+    @media (max-width: 1023px) {
+        margin-bottom: 0;
+    }
+}
+
+.valentin-wrapper-list__bottom {
+    font-family: $font-add;
+    font-weight: 600;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 1919px) {
+    }
+}
+
+.valentin-wrapper-list__comments {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    img {
+        margin-right: 5px;
+    }
+}
+
+.valentin-wrapper-list__count {
+    font-weight: 300;
+    font-size: 16px;
+    @media (max-width: 1919px) {
+        font-size: 14px;
+    }
+}
+
+.valentin-wrapper-list__add {
+    background-color: transparent;
+    border: none;
+    font-weight: 300;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 0;
+    padding-left: 25px;
+    background-image: url("../images/svg/plus.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    @media (max-width: 1919px) {
+        font-size: 14px;
+    }
+    @media (max-width: 1023px) {
+        background-image: url("../images/svg/basket.svg");
+        background-size: 34px auto;
+        height: 30px;
+        width: 34px;
+    }
+}
+
+.valentin-wrapper-list__price {
+    flex: 1 0 auto;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 1919px) {
+        text-align: center;
+        flex: 0 1 auto;
+        flex-direction: row;
+        justify-content: center;
+    }
+    @media (max-width: 1023px) {
+        display: none;
+    }
+}
+
+.valentin-wrapper-list__price-mobile {
+    display: flex;
+    text-align: center;
+    flex: 0 1 auto;
+    flex-direction: row;
+    justify-content: center;
+    flex-direction: column;
+    @media (max-width: 1023px) {
+        align-items: flex-start;
+    }
+}
+
+.valentin-wrapper-list__price-old {
+    color: $color-grey;
+    text-decoration: line-through;
+    font-weight: 300;
+    order: 1;
+    @media (max-width: 1919px) {
+        order: 0;
+        margin-right: 10px;
+    }
+    @media (max-width: 1023px) {
+        margin-right: 0;
+    }
+}
+
+.valentin-wrapper-list__price-new {
+    color: $color-orange;
+    font-weight: 600;
+    order: 0;
+    @media (max-width: 1919px) {
+        order: 1;
+    }
+}

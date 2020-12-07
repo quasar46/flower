@@ -1,0 +1,168 @@
+.contacts {
+    position: relative;
+    min-height: 580px;
+    display: flex;
+    overflow: hidden;
+    border-bottom: 1px solid $color-grey;
+    @media (max-width: 1919px) {
+        display: none;
+    }
+}
+
+.contacts__content {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px 0;
+    padding-right: 100px;
+    .title {
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    .list {
+        width: 50%;
+        margin-bottom: 50px;
+        .item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            // height: 20px;
+            span {
+                font-family: $font-add;
+                @media (max-width: 1023px) {
+                    font-size: 14px;
+                }
+            }
+            a {
+                font-family: $font-add;
+                text-decoration: none;
+                color: $color-text;
+                @media (max-width: 1023px) {
+                    font-size: 14px;
+                }
+            }
+            picture {
+                flex: 1 0 auto;
+                max-width: 20px;
+                width: 100%;
+                text-align: center;
+                margin-right: 15px;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &.title {
+                margin-bottom: 20px;
+                @media (max-width: 1023px) {
+                    margin-bottom: 15px;
+                }
+                @media (max-width: 400px) {
+                    text-align: center;
+                    display: block;
+                }
+            }
+            @media (max-width: 1919px) {
+                font-size: 14px;
+            }
+            @media (max-width: 1023px) {
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+        }
+        &.contacts__legal {
+            display: flex;
+            flex-direction: column;
+
+            span {
+                &:first-child {
+                    flex: 1 0 auto;
+                    max-width: 66px;
+                    width: 100%;
+                    color: $color-orange;
+                    @media (max-width: 1919px) {
+                        max-width: 60px;
+                    }
+                }
+            }
+            // @media(max-width: 1919px) {
+            //     margin-right: 60px;
+            // }
+        }
+        &.contacts__social {
+            display: flex;
+            flex-direction: column;
+            .item {
+                width: 100%;
+            }
+            a {
+                display: flex;
+                align-items: center;
+                width: 100%;
+            }
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+        @media (max-width: 1023px) {
+            margin-bottom: 30px;
+        }
+        @media (max-width: 400px) {
+            width: 100%;
+        }
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: -100%;
+        top: 0;
+        background-color: $color-white;
+    }
+}
+
+.contacts__map {
+    margin-left: auto;
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../images/map.png");
+    &--mode {
+        margin-left: 0;
+        width: 100%;
+        display: none;
+
+        iframe {
+            height: 390px;
+            @media (max-width: 1023px) {
+                height: 240px;
+            }
+        }
+        @media (max-width: 1919px) {
+            display: block;
+        }
+    }
+}
+
+.contacts__container {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 1920px;
+    padding: 0 70px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contacts__wrapper {
+    background-color: $color-white;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+    padding-left: 15px;
+    display: flex;
+}

@@ -1,0 +1,168 @@
+.basket-payment {
+    display: flex;
+    margin-bottom: 100px;
+    flex-direction: column;
+    .list {
+        .item {
+            line-height: 50px;
+            input {
+                position: absolute;
+                z-index: -1;
+                opacity: 0;
+                &:checked + label::before {
+                    background-image: url("../images/svg/circle-orange.svg");
+                    background-size: 16px auto;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+            }
+            label {
+                position: relative;
+                padding-left: 25px;
+                margin-right: 20px;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 50%;
+                    border: 1px solid $color-grey;
+                    left: 0;
+                    top: 0;
+                }
+            }
+            &.date-clock {
+                display: flex;
+                flex: 1 0 auto;
+                max-width: 107px;
+                width: 100%;
+                span {
+                    padding-left: 50px;
+                    padding-right: 20px;
+                    width: 100%;
+                    border: 1px solid $color-grey;
+                    line-height: 50px;
+                    background-image: url("../images/svg/clock-orange.svg");
+                    background-repeat: no-repeat;
+                    background-position: 20px center;
+                    @media (max-width: 1919px) {
+                        width: 80px;
+                        padding-left: 37px;
+                        margin: 0 auto;
+                        background-position: 10px center;
+                        line-height: 40px;
+                    }
+                    @media (max-width: 400px) {
+                        // width: 107px;
+                        height: 40px;
+                        align-self: center;
+                        width: 100%;
+                        margin: 0;
+                    }
+                }
+                @media (max-width: 1919px) {
+                    max-width: 100%;
+                }
+                @media (max-width: 400px) {
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+    .basket__col--1 {
+        .list {
+            display: flex;
+            justify-content: center;
+            @media (max-width: 1919px) {
+                flex-wrap: wrap;
+            }
+            @media (max-width: 400px) {
+                flex-direction: column;
+                justify-content: center;
+                flex: 1 0 auto;
+            }
+        }
+    }
+    .list-payment {
+        display: flex;
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+
+    .list-payment__item {
+        border: 1px solid $color-grey;
+        margin-right: 20px;
+        padding: 27px 0;
+        max-width: 224px;
+        flex: 1 0 auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        &:last-child {
+            margin-right: 0;
+        }
+        p {
+            color: $color-grey;
+        }
+        &:hover,
+        &.active {
+            border: 1px solid $color-orange;
+            p {
+                color: #1e1e1e;
+            }
+            .picture {
+                svg {
+                    path {
+                        fill: #ff784a;
+                    }
+                }
+            }
+        }
+        @media (max-width: 1919px) {
+            max-width: 173px;
+        }
+        @media (max-width: 400px) {
+            max-width: 136px;
+        }
+    }
+    @media (max-width: 1919px) {
+        margin-bottom: 35px;
+    }
+}
+
+.basket-payment__text {
+    margin-top: 40px;
+    text-align: center;
+    @media (max-width: 1919px) {
+        margin-top: 20px;
+    }
+    @media (max-width: 480px) {
+        margin-top: 0;
+    }
+}
+
+.basket-payment__lists {
+    display: flex;
+    max-width: 622px;
+    margin: 0 auto;
+    .list {
+        &:nth-child(2) {
+            @media (max-width: 400px) {
+                max-width: 107px;
+            }
+        }
+        @media (max-width: 400px) {
+            display: flex;
+        }
+    }
+    @media (max-width: 1919px) {
+        flex-direction: column;
+    }
+    @media (max-width: 400px) {
+        max-width: 100%;
+        width: 100%;
+        padding: 0 20px;
+        flex-direction: row;
+    }
+}

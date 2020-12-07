@@ -1,0 +1,8 @@
+.cart-content {
+    display: flex;
+    flex: 1 0 auto;
+    justify-content: space-between;
+    @media (max-width: 1919px) {
+        max-width: 213px;
+    }
+}

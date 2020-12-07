@@ -1,0 +1,45 @@
+doctype html
+html(lang="ru")
+    head
+        include modules/head.pug
+    body
+        .content
+            include modules/header.pug
+
+            main
+                //- breadcrumbs
+                .breadcrumbs
+                    .container
+                        ul.list
+                            li.item
+                                a(href="index.html") Главная
+                            li.item
+                                img(src="../images/svg/arrow-red.svg" alt="")
+                            li.item
+                                a(href="index.html") Личный кабинет
+                            li.item
+                                img(src="../images/svg/arrow-red.svg" alt="")
+                            li.item.active
+                                a РЕГИСТРАЦИЯ
+
+                //- basket-main
+                .registration
+                    picture.bg
+                        img(src="images/bg/registration.png" alt="")
+                    .container
+                        h2.main-title ДОБРО ПОЖАЛОВАТЬ!
+                        .registration__content
+                            h3.title РЕГИСТРАЦИЯ
+                            .registration__row.registration__row--input
+                                input.mode(type="text" placeholder="Имя")
+                                input.mode(type="email" placeholder="Email")
+                            .registration__row.registration__row--input
+                                input.mode(type="password" placeholder="Пароль")
+                                input.mode(type="password" placeholder="Подтвердите пароль")
+                            .registration__row.registration__row--btns
+                                button.enter ЗАРЕГИСТРИРОВАТЬСЯ
+
+
+        include modules/footer.pug
+        //- include modules/menu-mobile.pug
+        include modules/script.pug

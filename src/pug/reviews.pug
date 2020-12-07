@@ -1,0 +1,101 @@
+doctype html
+html(lang="ru")
+    head
+        include modules/head.pug
+    body
+        .content
+            include modules/header.pug
+
+            main
+                //- breadcrumbs
+                .breadcrumbs
+                    .container
+                        ul.list
+                            li.item
+                                a(href="index.html") Главная
+                            li.item
+                                img(src="../images/svg/arrow-red.svg" alt="")
+                            li.item.active
+                                a ОТЗЫВЫ О НАС
+                //- reviews
+                .reviews
+                    .container
+                        h2.main-title ОТЗЫВЫ О НАС
+                    .reviews__banner
+                        .container
+                            picture
+                                <source media="(min-width: 481px)" srcset="images/banner-reviews.jpg">
+                                <source media="(min-width: 0)" srcset="images/banner-reviews-mobile.jpg">
+                                <img src="images/banner-reviews.jpg" alt="">
+                    .container
+                        .reviews__content
+                            h2.main-title.reviews__amount
+                                span Отзывы
+                                span (17)
+                            ul.list
+                                li.row
+                                    .row__head
+                                        .title
+                                            .picture.male
+                                            h3.title Александр
+                                        .date
+                                            .picture
+                                                img(src="images/svg/clock.svg" alt="")
+                                            span 07 авг 2020
+                                    .row__text 
+                                        p Очень благодарен организации. Быстро оформили заказ, свежие и красивые цветы принесли в указанное время. Букет принёс уйму радости и тёплых чувств. От души благодарю сотрудников и рекомендую всем для заказов букетов.
+                                li.row
+                                    .row__head
+                                        .title
+                                            .picture.female
+                                            h3.title Надежда
+                                        .date
+                                            .picture
+                                                img(src="images/svg/clock.svg" alt="")
+                                            span 07 авг 2020
+                                    .row__text 
+                                        p Очень благодарен организации. Быстро оформили заказ, свежие и красивые цветы принесли в указанное время. Букет принёс уйму радости и тёплых чувств. От души благодарю сотрудников и рекомендую всем для заказов букетов.
+                                li.row
+                                    .row__head
+                                        .title
+                                            .picture.female
+                                            h3.title Алина
+                                        .date
+                                            .picture
+                                                img(src="images/svg/clock.svg" alt="")
+                                            span 07 авг 2020
+                                    .row__text 
+                                        p Очень благодарен организации. Быстро оформили заказ, свежие и красивые цветы принесли в указанное время. Букет принёс уйму радости и тёплых чувств. От души благодарю сотрудников и рекомендую всем для заказов букетов.
+                                li.row
+                                    .row__head
+                                        .title
+                                            .picture.female
+                                            h3.title Лариса
+                                        .date
+                                            .picture
+                                                img(src="images/svg/clock.svg" alt="")
+                                            span 07 авг 2020
+                                    .row__text 
+                                        p Очень благодарен организации. Быстро оформили заказ, свежие и красивые цветы принесли в указанное время. Букет принёс уйму радости и тёплых чувств. От души благодарю сотрудников и рекомендую всем для заказов букетов.
+
+                            button.reviews__button.show Оставить отзыв
+
+                            .reviews__form-wrapper
+                                form.reviews__form-inner(action="get")
+                                    h3.title.show Оставить отзыв
+                                    ul.list
+                                        li.item
+                                            textarea(placeholder="Введите текст отзыва")
+                                        li.item
+                                            input(type="text" placeholder="Имя")
+                                            input(type="email" placeholder="Email")
+                                            input(type="submit" value="Отправить")
+
+
+
+
+
+
+        include modules/footer.pug
+        //- include modules/menu-mobile.pug
+        include modules/script.pug

@@ -1,0 +1,96 @@
+.help-review {
+    position: relative;
+    background-color: $color-white;
+    padding: 50px 0;
+    margin-bottom: 100px;
+    &::before {
+        content: "";
+        position: absolute;
+        left: -100%;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $color-white;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        left: 100%;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $color-white;
+    }
+    @media (max-width: 1919px) {
+        margin-bottom: 35px;
+    }
+}
+
+.help-review__text {
+    position: relative;
+    padding: 0 40px;
+    margin-bottom: 40px;
+    p {
+        font-weight: 300;
+        line-height: 1.8;
+        font-style: italic;
+        font-family: $font-add;
+        @media (max-width: 1919px) {
+            font-size: 14px;
+        }
+    }
+    @media (max-width: 1919px) {
+        padding: 0;
+    }
+}
+
+.help-review__quotes--1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    @media (max-width: 1919px) {
+        top: -20px;
+    }
+}
+.help-review__quotes--2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: rotate(180deg);
+    @media (max-width: 1919px) {
+        bottom: -20px;
+    }
+}
+
+.help-review__bottom {
+    display: flex;
+    justify-content: center;
+    picture {
+        margin-right: 27px;
+        max-width: 110px;
+        width: 100%;
+        @media (max-width: 1919px) {
+            max-width: 90px;
+        }
+        @media (max-width: 1023px) {
+            max-width: 67px;
+        }
+    }
+    .help-review__title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .name {
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            @media (max-width: 1023px) {
+                margin-bottom: 10px;
+            }
+        }
+        p {
+            @media (max-width: 1023px) {
+                font-size: 14px;
+            }
+        }
+    }
+}

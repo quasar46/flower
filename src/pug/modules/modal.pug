@@ -1,0 +1,15 @@
+#modal
+    .help-feedback
+        .help-feedback__cross
+            img(src="images/svg/cross.svg" alt="")
+        .help-feedback__wrapper
+            h2.title ФОРМА ОБРАТНОЙ СВЯЗИ
+            .help-feedback__inputs
+                input(type="text" placeholder="Имя")
+                input(type="text" placeholder="Телефон")
+            .help-feedback__consent
+                .consent
+                    input(type="checkox" id="check-consent")
+                    label(for="check-consent") 
+                        p Согласен с обработкой <a href="">персональные данные</a>
+                input(type="submit" value="Отправить")

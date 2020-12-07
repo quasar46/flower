@@ -1,0 +1,174 @@
+doctype html
+html(lang="ru")
+    head
+        include modules/head.pug
+    body
+        .content
+            include modules/header.pug
+
+            main
+                //- breadcrumbs
+                .breadcrumbs
+                    .container
+                        ul.list
+                            li.item
+                                a(href="index.html") Главная
+                            li.item
+                                img(src="../images/svg/arrow-red.svg" alt="")
+                            li.item.active
+                                a КОНТАКТЫ
+                //- contacts
+                h2.main-title Контакты
+                .contacts
+                    .contacts__map
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2471.160870860312!2d36.187844215835646!3d51.73009287967229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412f0398eb5874db%3A0xdff9fdd8a6109762!2sUlitsa%20Radishcheva%2C%206%2C%20Kursk%2C%20Kurskaya%20oblast&#39;%2C%20305000!5e0!3m2!1sen!2sru!4v1605835566305!5m2!1sen!2sru" width="1163" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    .contacts__container
+                        .contacts__wrapper
+                            .contacts__content
+                                ul.list.contacts__info
+                                    li.item.title Контакты
+                                    li.item
+                                        picture
+                                            img(src="images/svg/mail.svg" alt="")
+                                        a(href="") bazacvetov@mail.ru
+                                    li.item
+                                        picture
+                                            img(src="images/svg/phone.svg" alt="")
+                                        a(href="") +7 (951) 321-50-00 
+                                    li.item
+                                        picture
+                                            img(src="images/svg/phone.svg" alt="")
+                                        a(href="") +7 (951) 321-94-44
+                                    li.item
+                                        picture
+                                            img(src="images/svg/phone.svg" alt="")
+                                        a(href="") +7 (951) 321-24-44
+                                ul.list.contacts__address
+                                    li.item.title АДРЕСА МАГАЗИНОВ
+                                    li.item ​
+                                        picture
+                                            img(src="images/svg/marker.svg" alt="")
+                                        span ул. Радищева 46, 1 этаж
+                                    li.item 
+                                        picture
+                                            img(src="images/svg/marker.svg" alt="")
+                                        span ​ул. Карла Маркса 73​, 1 этаж
+                                    li.item 
+                                        picture
+                                            img(src="images/svg/marker.svg" alt="")
+                                        span ул. Малых 43, 1 этаж
+                                ul.list.contacts__legal
+                                    li.item.title Реквизиты
+                                    li.item
+                                        span ИНН:
+                                        span 12345678789
+                                    li.item
+                                        span БИК:
+                                        span 0321459756
+                                    li.item
+                                        span ОКПО:
+                                        span 97514234
+                                    li.item
+                                        span ОГРН:
+                                        span 9755512748213 (10.10.2010)
+                                ul.list.contacts__social
+                                    li.item.title Соцсети
+                                    li.item
+                                        a(href="")
+                                            picture
+                                                img(src="images/svg/vk.svg" alt="")
+                                            span Вконтакте
+                                    li.item
+                                        a(href="")
+                                            picture
+                                                img(src="images/svg/inst.svg" alt="")
+                                            span Instagram
+                                    li.item
+                                        a(href="")
+                                            picture
+                                                img(src="images/svg/viber.svg" alt="")
+                                            span Viber
+                                    li.item
+                                        a(href="")
+                                            picture
+                                                img(src="images/svg/whatsapp.svg" alt="")
+                                            span Whatsapp
+                .contacts-mode
+                    .container
+                        .contacts__content
+                            ul.list.contacts__info
+                                li.item.title Контакты
+                                li.item
+                                    picture
+                                        img(src="images/svg/mail.svg" alt="")
+                                    a(href="") bazacvetov@mail.ru
+                                li.item
+                                    picture
+                                        img(src="images/svg/phone.svg" alt="")
+                                    a(href="") +7 (951) 321-50-00 
+                                li.item
+                                    picture
+                                        img(src="images/svg/phone.svg" alt="")
+                                    a(href="") +7 (951) 321-94-44
+                                li.item
+                                    picture
+                                        img(src="images/svg/phone.svg" alt="")
+                                    a(href="") +7 (951) 321-24-44
+                            ul.list.contacts__address
+                                li.item.title АДРЕСА МАГАЗИНОВ
+                                li.item ​
+                                    picture
+                                        img(src="images/svg/marker.svg" alt="")
+                                    span ул. Радищева 46, 1 этаж
+                                li.item 
+                                    picture
+                                        img(src="images/svg/marker.svg" alt="")
+                                    span ​ул. Карла Маркса 73​, 1 этаж
+                                li.item 
+                                    picture
+                                        img(src="images/svg/marker.svg" alt="")
+                                    span ул. Малых 43, 1 этаж
+                            ul.list.contacts__legal
+                                li.item.title Реквизиты
+                                li.item
+                                    span ИНН:
+                                    span 12345678789
+                                li.item
+                                    span БИК:
+                                    span 0321459756
+                                li.item
+                                    span ОКПО:
+                                    span 97514234
+                                li.item
+                                    span ОГРН:
+                                    span 9755512748213 (10.10.2010)
+                            ul.list.contacts__social
+                                li.item.title Соцсети
+                                li.item
+                                    a(href="")
+                                        picture
+                                            img(src="images/svg/vk.svg" alt="")
+                                        span Вконтакте
+                                li.item
+                                    a(href="")
+                                        picture
+                                            img(src="images/svg/inst.svg" alt="")
+                                        span Instagram
+                                li.item
+                                    a(href="")
+                                        picture
+                                            img(src="images/svg/viber.svg" alt="")
+                                        span Viber
+                                li.item
+                                    a(href="")
+                                        picture
+                                            img(src="images/svg/whatsapp.svg" alt="")
+                                        span Whatsapp
+                .contacts__map.contacts__map--mode
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2471.160870860312!2d36.187844215835646!3d51.73009287967229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412f0398eb5874db%3A0xdff9fdd8a6109762!2sUlitsa%20Radishcheva%2C%206%2C%20Kursk%2C%20Kurskaya%20oblast&#39;%2C%20305000!5e0!3m2!1sen!2sru!4v1605835566305!5m2!1sen!2sru" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+
+
+        include modules/footer.pug
+        //- include modules/menu-mobile.pug
+        include modules/script.pug

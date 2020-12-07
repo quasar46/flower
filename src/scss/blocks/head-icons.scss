@@ -1,0 +1,36 @@
+.head-icons {
+    display: none;
+    align-items: center;
+    & > li {
+        margin-right: 10px;
+        display: flex;
+        flex: 1 0 auto;
+        a {
+            flex: 1 0 auto;
+        }
+        img {
+            width: 100%;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    @media (max-width: 1023px) {
+        display: flex;
+    }
+}
+
+.head-icons__glass {
+    max-width: 20px;
+    width: 100%;
+}
+
+.head-icons__favorites {
+    max-width: 20px;
+    width: 100%;
+}
+
+.head-icons__basket {
+    max-width: 22px;
+    width: 100%;
+}

@@ -1,0 +1,279 @@
+doctype html
+html(lang="ru")
+    head
+        include modules/head.pug
+    body
+        .content
+            include modules/header.pug
+
+            main
+                //- breadcrumbs
+                .breadcrumbs
+                    .container
+                        ul.list
+                            li.item
+                                a(href="index.html") Главная
+                            li.item
+                                img(src="../images/svg/arrow-red.svg" alt="")
+                            li.item
+                                a(href="") Каталог
+                            li.item
+                                img(src="../images/svg/arrow-red.svg" alt="")
+                            li.item
+                                a(href="") РОЗЫ КУСТОВЫЕ
+                            li.item
+                                img(src="../images/svg/arrow-red.svg" alt="")
+                            li.item.active
+                                a Нежный букетик кустовых роз
+                //- cart
+                .cart
+                    .container
+                        .cart__wrapper
+                            .cart-slider
+                                .cart-slider__nav
+                                    picture
+                                        img(src="images/cart/preview2.jpg" alt="")
+                                    picture
+                                        img(src="images/cart/preview2.jpg" alt="")
+                                    picture
+                                        img(src="images/cart/preview2.jpg" alt="")
+                                    picture
+                                        img(src="images/cart/preview2.jpg" alt="")
+                                    picture
+                                        img(src="images/cart/preview2.jpg" alt="")
+                                    picture
+                                        img(src="images/cart/preview2.jpg" alt="")
+                                    picture
+                                        img(src="images/cart/preview2.jpg" alt="")
+                                    picture
+                                        img(src="images/cart/preview2.jpg" alt="")
+                                    picture
+                                        img(src="images/cart/preview2.jpg" alt="")
+                                    picture
+                                        img(src="images/cart/preview2.jpg" alt="")
+                                .cart-slider__for
+                                    picture
+                                        span.sale АКЦИЯ - 40%
+                                        img(src="images/cart/item2.jpg" alt="")
+                                    picture
+                                        img(src="images/cart/item2.jpg" alt="")
+                                    picture
+                                        img(src="images/cart/item2.jpg" alt="")
+                                    picture
+                                        img(src="images/cart/item2.jpg" alt="")
+                                    picture
+                                        img(src="images/cart/item2.jpg" alt="")
+                                    picture
+                                        img(src="images/cart/item2.jpg" alt="")
+                                    picture
+                                        img(src="images/cart/item2.jpg" alt="")
+                                    picture
+                                        img(src="images/cart/item2.jpg" alt="")
+                                    picture
+                                        img(src="images/cart/item2.jpg" alt="")
+                                    picture
+                                        img(src="images/cart/item2.jpg" alt="")
+                                //- col1
+                                .cart-content-col1
+                                    .cart-content-col1__top
+                                        h2 Красная роза поштучно
+                                        //- row
+                                        .cart-content-col1__row1
+                                            .cart-content-col1__stars
+                                                span.star
+                                                    img(src="images/svg/star-orange.svg" alt="")
+                                                span.star
+                                                    img(src="images/svg/star-orange.svg" alt="")
+                                                span.star
+                                                    img(src="images/svg/star-orange.svg" alt="")
+                                                span.star
+                                                    img(src="images/svg/star-orange.svg" alt="")
+                                                span.star
+                                                    img(src="images/svg/star.svg" alt="")
+                                            .cart-content-col1__reviews
+                                                a(href="") Отзывы
+                                    //- cart-content-col1__price
+                                    .cart-content-col1__price
+                                        span.cart-content-col1__stock В наличии
+                                        span.cart-content-col1__value 6 490 ₽
+                                    //- row
+                                    .cart-content-col1__row2
+                                        span.text Количество:
+                                        .cart-content-col1__number
+                                            span.mark
+                                                img(src="images/svg/minus.svg" alt="")
+                                            input(type="text" placeholder="1")
+                                            span.mark
+                                                img(src="images/svg/plus.svg" alt="")
+                                        .cart-content-col1__favorite
+                                            button В избранное
+
+                                    //- row
+                                    .cart-content-col1__row4
+                                        span.text Высота, см
+                                        ul.list
+                                            li.item 40
+                                            li.item 50
+                                            li.item 60
+                                            li.item 70
+                                            li.item 80
+                                    //- row
+                                    .cart-content-col1__row5
+                                        span.text НУЖНА УПАКОВКА?
+                                        ul.list
+                                            li.item Да
+                                            li.item Нет
+                                    //- row
+                                    .cart-content-col1__row6
+                                        span.text Упаковку вы можете выбрать в <a href="#">каталоге</a>
+                                        span.text также не забудье про <a href="#">сопутствующие товары</a>
+
+
+                            //- col2
+                            .cart-content-col2
+                                .cart-content-col2__order.cart-content-col2__order
+                                    .cart-content-col2__price
+                                        span.cart-content-col2__price 60 ₽
+                                        span.cart-content-col2__presence В НАЛИЧИИ
+                                    button.cart-content-col2__quick-order БЫСТРЫЙ ЗАКАЗ
+                                    button.cart-content-col2__order-btn в корзину
+                                .cart-content-col2__links
+                                    ul.list
+                                        li.item
+                                            a.link1(href="") Гарантия свежести
+                                        li.item
+                                            a.link2(href="") Бесплатная доставка
+                                        li.item
+                                            a.link3(href="") Как получить бонусы
+                                        li.item
+                                            a.link4(href="") Наличие в магазинах
+                        //- cart-description
+                        .cart-description
+                            h2.main-title.show
+                                span.arrow Описание
+                            .cart-description__content
+                                span Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi accusamus illo hic repellat perferendis ipsum nam magni voluptatem molestias ducimus molestiae, voluptas repellendus vel dolor eligendi cumque. Incidunt pariatur alias ea tenetur, enim dignissimos consectetur mollitia itaque tempore reprehenderit quidem sit laudantium maiores maxime accusamus magnam. Earum quidem eum qui! Sapiente quasi voluptates quo recusandae nemo? Fuga voluptatem earum ratione. Deleniti impedit debitis commodi id et numquam maxime, iure eos velit, alias eum corporis recusandae sint dolore possimus fugit quam nemo dolorem ipsa ut labore. Dolorem architecto numquam sed nemo quia corrupti quo minima omnis, fugiat itaque libero a nam!
+                        //- cart-description__order
+                        .cart-description-order
+                            .cart-description-order__buttons
+                                button.quick-order Быстрый заказ
+                                button.add-basket В корзину
+                            ul.cart-description-order__list
+                                li.item
+                                    picture
+                                        img(src="images/svg/description/item1.svg" alt="")
+                                    span Гарантия свежести
+                                li.item
+                                    picture
+                                        img(src="images/svg/description/item2.svg" alt="")
+                                    span Как получить бонусы
+                                li.item
+                                    picture
+                                        img(src="images/svg/description/item3.svg" alt="")
+                                    span Бесплатная доставка
+                                li.item
+                                    picture
+                                        img(src="images/svg/description/item4.svg" alt="")
+                                    span Наличие в магазинах
+
+
+
+
+                        //- cart-related
+                        .cart-related
+                            .container-2
+                                h2.main-title.show 
+                                    span.arrow СОПУТСТВУЮЩИЕ ТОВАРЫ
+                                .main-list__content
+                                    ul.list.related-slider
+                                        li.item
+                                            picture
+                                                img(src="images/item1.jpg" alt="")
+                                            ul.main-list__bottom
+                                                li.row
+                                                    span.name Композиция Рассвет в кашпо
+                                                    .price 2 490 ₽
+                                                li.row
+                                                    span.comments 15
+                                                    span.add-basket В КОРЗИНУ
+                                        li.item
+                                            picture
+                                                img(src="images/item2.jpg" alt="")
+                                            ul.main-list__bottom
+                                                li.row
+                                                    span.name Пионы 15 комплиментов
+                                                    .price 10 090 ₽
+                                                li.row
+                                                    span.comments 34
+                                                    span.add-basket В КОРЗИНУ
+                                        li.item
+                                            picture
+                                                img(src="images/item3.jpg" alt="")
+                                            ul.main-list__bottom
+                                                li.row
+                                                    span.name Букет с пионами Радости жизни в шляпной коробке
+                                                    .price 
+                                                        span.new-price 490 ₽
+                                                        span.old-price 1 490 ₽
+                                                li.row
+                                                    span.comments 41
+                                                    span.add-basket В КОРЗИНУ
+
+                        //- cart-reviews
+                        .cart-reviews
+                            .container-2
+                                h2.main-title.show
+                                    span Отзывы
+                                    span.arrow (17)
+                                .cart-reviews__content
+                                    .cart-reviews__item
+                                        .cart-reviews__head
+                                            h3.name Александр
+                                            p.date 07 авг 2020
+                                        .cart-reviews__text
+                                            p Очень благодарен организации. Быстро оформили заказ, свежие и красивые цветы принесли в указанное время. Букет принёс уйму радости и тёплых чувств. От души благодарю сотрудников и рекомендую всем для заказов букетов.
+                                    .cart-reviews__item
+                                        .cart-reviews__head
+                                            h3.name Александр
+                                            p.date 07 авг 2020
+                                        .cart-reviews__text
+                                            p Очень благодарен организации. Быстро оформили заказ, свежие и красивые цветы принесли в указанное время. Букет принёс уйму радости и тёплых чувств. От души благодарю сотрудников и рекомендую всем для заказов букетов.
+                                    .cart-reviews__item
+                                        .cart-reviews__head
+                                            h3.name Александр
+                                            p.date 07 авг 2020
+                                        .cart-reviews__text
+                                            p Очень благодарен организации. Быстро оформили заказ, свежие и красивые цветы принесли в указанное время. Букет принёс уйму радости и тёплых чувств. От души благодарю сотрудников и рекомендую всем для заказов букетов.
+                                    .cart-reviews__item
+                                        .cart-reviews__head
+                                            h3.name Александр
+                                            p.date 07 авг 2020
+                                        .cart-reviews__text
+                                            p Очень благодарен организации. Быстро оформили заказ, свежие и красивые цветы принесли в указанное время. Букет принёс уйму радости и тёплых чувств. От души благодарю сотрудников и рекомендую всем для заказов букетов.
+
+                        //- cart-form
+                        .cart-form
+                            .container-2
+                                .cart-form__content
+                                    h2.main-title Оставить отзыв
+                                    ul.list
+                                        li.item
+                                            textarea(placeholder="Введите текст отзыва")
+                                        li.item
+                                            input(type="text" placeholder="Имя")
+                                            input(type="email" placeholder="Email")
+                                            input(type="submit" value="Отправить")
+
+                        //- all-reviews
+                        .all-reviews
+                            .container-2
+                                button.all-reviews__btn Все отзывы
+
+
+
+
+
+
+        include modules/footer.pug
+        //- include modules/menu-mobile.pug
+        include modules/script.pug

@@ -1,0 +1,39 @@
+.breadcrumbs {
+    padding: 30px 0;
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: -15px;
+        a {
+            font-weight: 300;
+            text-transform: uppercase;
+            color: #bababa;
+            text-decoration: none;
+            @media (max-width: 1023px) {
+                font-size: 14px;
+            }
+        }
+        .item {
+            margin-right: 15px;
+            margin-bottom: 15px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        .item.active {
+            a {
+                color: $color-text;
+                text-transform: none;
+            }
+        }
+        @media (max-width: 1023px) {
+            justify-content: center;
+        }
+        @media (max-width: 400px) {
+            justify-content: flex-start;
+        }
+    }
+    @media (max-width: 1919px) {
+        padding: 20px 0;
+    }
+}

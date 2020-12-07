@@ -1,0 +1,98 @@
+.cabinet-details {
+    display: none;
+    padding: 70px 75px;
+    padding-right: 0;
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 20px;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 100%;
+        background-color: #fff;
+    }
+    @media (max-width: 1023px) {
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background-color: $color-white;
+        }
+    }
+    .title {
+        text-transform: uppercase;
+        font-size: 18px;
+        margin-bottom: 20px;
+        @media (max-width: 1919px) {
+            font-size: 14px;
+        }
+        @media (max-width: 1023px) {
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+    .cross {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: transparent;
+        border: none;
+        @media (max-width: 1919px) {
+            top: 30px;
+            right: 50px;
+        }
+    }
+    &--active {
+        display: flex;
+
+        @media (max-width: 1919px) {
+            flex-direction: column;
+        }
+        @media (max-width: 1023px) {
+            padding: 35px 0;
+        }
+    }
+}
+
+.cabinet-details__col {
+    margin-right: 144px;
+    @media (max-width: 1919px) {
+        margin-right: 0;
+    }
+}
+
+.cabinet-details__list {
+    font-weight: 300;
+    line-height: 1.5;
+    li {
+        margin-bottom: 10px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    a {
+        color: $color-orange;
+    }
+
+    @media (max-width: 1919px) {
+        margin-bottom: 30px;
+    }
+    @media (max-width: 1023px) {
+        padding: 0 55px;
+        font-size: 14px;
+    }
+    @media (max-width: 400px) {
+        padding: 0;
+    }
+    &--mode {
+        @media (max-width: 1023px) {
+            padding: 0;
+        }
+    }
+}

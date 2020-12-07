@@ -1,0 +1,48 @@
+doctype html
+html(lang="ru")
+    head
+        include modules/head.pug
+    body
+        .content
+            include modules/header.pug
+
+            main
+                //- breadcrumbs
+                .breadcrumbs
+                    .container
+                        ul.list
+                            li.item
+                                a(href="index.html") Главная
+                            li.item
+                                img(src="../images/svg/arrow-red.svg" alt="")
+                            li.item
+                                a(href="index.html") Личный кабинет
+                            li.item
+                                img(src="../images/svg/arrow-red.svg" alt="")
+                            li.item.active
+                                a АВТОРИЗАЦИЯ
+
+                //- basket-main
+                .autorization
+                    picture.bg
+                        img(src="images/bg/autorization.png" alt="")
+                    .container
+                        h2.main-title ЗДРАВСТВУЙТЕ! РАДЫ СНОВА ВАС ВИДЕТЬ!
+                        .autorization__content
+                            h3.title АВТОРИЗАЦИЯ
+                            .autorization__row.autorization__row--input
+                                input(type="text" placeholder="Логин")
+                                input(type="password" placeholder="Пароль")
+                            .autorization__row.autorization__row--remember
+                                .autorization__remember
+                                    input(type="checkbox" id="check")
+                                    label(for="check") Запомнить меня на этом компьютере
+                                a(href="") Забыли пароль?
+                            .autorization__row.autorization__row--btns
+                                button.enter Войти
+                                button.reg ЗАРЕГИСТРИРОВАТЬСЯ
+
+
+        include modules/footer.pug
+        //- include modules/menu-mobile.pug
+        include modules/script.pug

@@ -1,0 +1,191 @@
+.main-blog-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .prev {
+        left: 0;
+        @media (max-width: 1023px) {
+            left: 4px;
+        }
+    }
+    .next {
+        right: 0;
+        @media (max-width: 1023px) {
+            right: 4px;
+        }
+    }
+    .prev,
+    .next {
+        position: absolute;
+        z-index: 10;
+        bottom: 0;
+        width: 24px;
+    }
+
+    .slick-dots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: 0;
+        li {
+            width: 10px;
+            height: 10px;
+            background-color: #4f4f51;
+            border-radius: 50%;
+            &.slick-active {
+                background-color: $color-orange;
+                width: 8px;
+                height: 8px;
+            }
+            margin: 0 3px;
+            width: 5px;
+            height: 5px;
+        }
+        button {
+            font-size: 0;
+            padding: 0;
+            &::before {
+                font-size: 0;
+            }
+        }
+    }
+    .slick-track {
+        display: flex;
+    }
+    .button__next {
+        @media (max-width: 1023px) {
+            display: none;
+        }
+    }
+}
+
+.main-blog-wrapper__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -20px;
+    max-width: 1476px;
+    width: 100%;
+    padding-bottom: 30px;
+    &.slick-slider {
+        margin-bottom: 0;
+    }
+    @media (max-width: 1919px) {
+        margin: 0 -12px;
+    }
+    @media (max-width: 1023px) {
+        margin: 0 -4px;
+    }
+}
+
+.main-blog-wrapper__item {
+    max-width: calc(100% / 4 - 20px);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    picture {
+        display: flex;
+        height: 271px;
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+        @media (max-width: 1919px) {
+            height: 164px;
+        }
+        @media (max-width: 1023px) {
+            height: 212px;
+        }
+    }
+    &.slick-slide {
+        display: flex;
+    }
+    @media (max-width: 1919px) {
+        max-width: calc(100% / 4 - 12px);
+    }
+    @media (max-width: 1023px) {
+        margin: 0 4px;
+    }
+}
+
+.main-blog-wrapper__bottom {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+    height: 100%;
+    @media (max-width: 1919px) {
+        padding: 15px 0;
+    }
+}
+
+.main-blog-wrapper__row {
+    &:first-child {
+        margin-bottom: 30px;
+        @media (max-width: 1919px) {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        @media (max-width: 1023px) {
+            margin-bottom: 35px;
+        }
+    }
+    &:last-child {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-top: auto;
+    }
+}
+
+.main-blog-wrapper__row-name {
+    font-family: $font-add;
+    font-weight: 400;
+    font-size: 24px;
+    @media (max-width: 1919px) {
+        font-size: 14px;
+    }
+}
+
+.main-blog-wrapper__row-date {
+    font-weight: 300;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    img {
+        margin-right: 10px;
+        @media (max-width: 1023px) {
+            width: 16px;
+        }
+    }
+    @media (max-width: 1919px) {
+        font-size: 14px;
+    }
+    @media (max-width: 1023px) {
+        font-size: 12px;
+    }
+}
+
+.main-blog-wrapper__row-read {
+    font-weight: 300;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: $color-text;
+    text-decoration: none;
+    position: relative;
+    padding-right: 20px;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 7px;
+        height: 12px;
+        background-image: url("../images/svg/arrow.svg");
+        background-repeat: no-repeat;
+        background-size: 7px auto;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    @media (max-width: 1023px) {
+        font-size: 14px;
+    }
+}

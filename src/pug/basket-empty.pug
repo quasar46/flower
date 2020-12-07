@@ -1,0 +1,33 @@
+doctype html
+html(lang="ru")
+    head
+        include modules/head.pug
+    body
+        .content
+            include modules/header.pug
+
+            main
+                //- breadcrumbs
+                .breadcrumbs
+                    .container
+                        ul.list
+                            li.item
+                                a(href="index.html") Главная
+                            li.item
+                                img(src="../images/svg/arrow-red.svg" alt="")
+                            li.item.active
+                                a КОРЗИНА
+
+                //- basket-main
+                .basket-empty
+                    .container
+                        h2.main-title ОЙ! В ВАЗЕ НЕТ ВОДЫ! СКОРЕЕ НАПОЛНИТЕ ЕЕ!
+                        picture
+                            img(src="images/basket-empty.png" alt="")
+                        p В КОРЗИНЕ СЕЙЧАС ПУСТО. <i class="br"></i> ВЫ МОЖЕТЕ ПОПОЛНИТЬ ЕЕ ТОВАРАМИ ИЗ <a href="">КАТАЛОГА</a>
+
+
+
+        include modules/footer.pug
+        //- include modules/menu-mobile.pug
+        include modules/script.pug

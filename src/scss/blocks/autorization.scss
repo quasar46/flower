@@ -1,0 +1,198 @@
+.autorization {
+    position: relative;
+    padding-bottom: 100px;
+    .main-title {
+        color: $color-grey;
+        font-size: 18px;
+        @media (max-width: 1023px) {
+            font-size: 16px;
+        }
+    }
+    .bg {
+        position: absolute;
+        max-width: 309px;
+        bottom: 0;
+        right: 70px;
+        @media (max-width: 1919px) {
+            max-width: 144px;
+            right: 50px;
+        }
+        @media (max-width: 1023px) {
+            display: none;
+        }
+    }
+    @media (max-width: 1023px) {
+        padding-bottom: 50px;
+    }
+}
+
+.autorization__content {
+    position: relative;
+    max-width: 886px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: $color-white;
+    padding: 0 80px;
+    padding-top: 56px;
+    padding-bottom: 50px;
+
+    .title {
+        font-weight: 300;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+        font-size: 18px;
+        @media (max-width: 1919px) {
+            margin-bottom: 25px;
+        }
+    }
+    input {
+        line-height: 50px;
+        font-weight: 300;
+        font-family: $font-add;
+        padding: 0 30px;
+        border: 1px solid $color-grey;
+        // margin-bottom: 25px;
+        width: 50%;
+        &:first-child {
+            margin-right: 20px;
+        }
+        &.mode {
+            margin-bottom: 0;
+        }
+        @media (max-width: 1919px) {
+            line-height: 40px;
+        }
+        @media (max-width: 1023px) {
+            line-height: 50px;
+        }
+    }
+
+    @media (max-width: 1919px) {
+        max-width: 620px;
+        padding: 38px;
+    }
+    @media (max-width: 1023px) {
+        padding: 35px 0;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: -100%;
+            top: 0;
+            background-color: #fff;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 100%;
+            top: 0;
+            background-color: #fff;
+        }
+    }
+}
+
+.autorization__row {
+    width: 100%;
+    display: flex;
+    &--input {
+        margin-bottom: 25px;
+        @media (max-width: 400px) {
+            flex-direction: column;
+            input {
+                width: 100%;
+                margin: 0;
+                &:first-child {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    &--remember {
+        margin-bottom: 35px;
+        justify-content: space-between;
+        input {
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+            &:checked + label::before {
+                background-image: url("../images/svg/arrow-red.svg");
+                background-size: cover;
+                background-size: 15px auto;
+                background-position: center;
+                transform: rotate(90deg);
+            }
+        }
+        label {
+            position: relative;
+            padding-left: 30px;
+            font-weight: 300;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                border: 1px solid $color-grey;
+                top: 0;
+                left: 0;
+            }
+            @media (max-width: 1919px) {
+                font-size: 14px;
+            }
+            @media (max-width: 400px) {
+                display: flex;
+            }
+        }
+        a {
+            color: $color-orange;
+            font-weight: 300;
+            @media (max-width: 1023px) {
+                width: 100%;
+                text-align: center;
+                margin-top: 15px;
+            }
+        }
+        @media (max-width: 1023px) {
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    &--btns {
+        justify-content: center;
+        button {
+            background-color: transparent;
+            border: 1px solid $color-grey;
+            text-transform: uppercase;
+            line-height: 50px;
+            padding: 0 34px;
+            &.enter {
+                background-color: $color-orange;
+                color: $color-white;
+                border: none;
+                margin-right: 20px;
+            }
+            @media (max-width: 1919px) {
+                font-size: 14px;
+                line-height: 40px;
+            }
+            @media (max-width: 1023px) {
+                line-height: 50px;
+            }
+        }
+        @media (max-width: 400px) {
+            flex-direction: column;
+            button {
+                width: 100%;
+                margin: 0;
+                &:first-child {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}

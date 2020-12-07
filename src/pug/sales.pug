@@ -1,0 +1,78 @@
+doctype html
+html(lang="ru")
+    head
+        include modules/head.pug
+    body
+        .content
+            include modules/header.pug
+
+            main
+                //- breadcrumbs
+                .breadcrumbs
+                    .container
+                        ul.list
+                            li.item
+                                a(href="index.html") Главная
+                            li.item
+                                img(src="../images/svg/arrow-red.svg" alt="")
+                            li.item.active
+                                a АКЦИИ
+                //- sales
+                .sales
+                    .container
+                        h2.main-title Акции
+                        .sales-wrapper
+                            ul.list
+                                li.item
+                                    picture
+                                        img(src="images/sales/item1.png" alt="")
+                                    .item__inner
+                                        .item__head 
+                                            h3.title АКЦИЯ НА СИРЕНИ! ОГРОМНЫЕ БУКЕТЫ ПО НИЗКОЙ СТОИМОСТИ
+                                        .item__content 
+                                            p Истинный символ весны - это сирень! Лучшая цена - <span>115 ₽/шт.</span>
+                                        .item__bottom
+                                            p Действует до <span class="color">15.10.20</span>
+                                            button.button В каталог
+                                li.item
+                                    picture
+                                        img(src="images/sales/item2.png" alt="")
+                                    .item__inner
+                                        .item__head 
+                                            h3.title ФАНТАСТИЧЕСКИЕ ПИОНЫ ЗА <span class="color">350 ₽</span>
+                                        .item__content 
+                                            p Шикарные, фантастически огромные пионы по <span class="color">115 ₽/шт</span>. В такие пионы невозможно не влюбиться!
+                                        .item__bottom
+                                            p Действует до <span class="color">15.10.20</span>
+                                            button.button В каталог
+                                li.item
+                                    picture
+                                        img(src="images/sales/item1.png" alt="")
+                                    .item__inner
+                                        .item__head 
+                                            h3.title АКЦИЯ НА СИРЕНИ! ОГРОМНЫЕ БУКЕТЫ ПО НИЗКОЙ СТОИМОСТИ
+                                        .item__content
+                                            p Истинный символ весны - это сирень! Лучшая цена - <span class="color">115 ₽/шт.</span>
+                                        .item__bottom
+                                            p Действует до <span class="color">15.10.20</span>
+                                            button.button В каталог
+                                li.item
+                                    picture
+                                        img(src="images/sales/item2.png" alt="")
+                                    .item__inner
+                                        .item__head 
+                                            h3.title ФАНТАСТИЧЕСКИЕ ПИОНЫ ЗА 350 ₽
+                                        .item__content 
+                                            p Истинный символ весны - это сирень! Лучшая цена - <span class="color">115 ₽/шт.</span>
+                                        .item__bottom
+                                            p Действует до <span class="color">15.10.20</span>
+                                            button.button В каталог
+
+
+
+
+
+
+        include modules/footer.pug
+        //- include modules/menu-mobile.pug
+        include modules/script.pug

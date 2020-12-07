@@ -1,0 +1,45 @@
+.help-section {
+    display: flex;
+    padding-bottom: 70px;
+    picture {
+        margin-right: 40px;
+        max-width: 794px;
+        flex: 1 0 auto;
+        @media (max-width: 1919px) {
+            max-width: 404px;
+        }
+        @media (max-width: 1023px) {
+            max-width: 100%;
+            margin-bottom: 25px;
+            margin-right: 0;
+        }
+    }
+    .title {
+        font-weight: 700;
+        margin-bottom: 25px;
+        text-align: left;
+        @media (max-width: 1023px) {
+            text-align: center;
+        }
+    }
+    p {
+        font-family: $font-add;
+        line-height: 1.8;
+        @media (max-width: 1919px) {
+            font-size: 14px;
+        }
+        @media (max-width: 1023px) {
+            font-size: 16px;
+        }
+    }
+    @media (max-width: 1023px) {
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+}
+
+.help-section__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

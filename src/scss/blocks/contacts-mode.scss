@@ -1,0 +1,25 @@
+.contacts-mode {
+    display: none;
+
+    background-color: #fff;
+    .contacts__content {
+        padding: 50px 0;
+        // max-width: 545px;
+        padding: 50px 190px;
+        width: 100%;
+        margin: 0 auto;
+
+        &::before {
+            display: none;
+        }
+        @media (max-width: 1023px) {
+            padding: 35px 0;
+        }
+        @media (max-width: 400px) {
+            flex-direction: column;
+        }
+    }
+    @media (max-width: 1919px) {
+        display: block;
+    }
+}

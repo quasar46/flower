@@ -1,0 +1,88 @@
+doctype html
+html(lang="ru")
+    head
+        include modules/head.pug
+    body
+        .content
+            include modules/header.pug
+
+            main
+                //- breadcrumbs
+                .breadcrumbs
+                    .container
+                        ul.list
+                            li.item
+                                a(href="index.html") Главная
+                            li.item
+                                img(src="../images/svg/arrow-red.svg" alt="")
+                            li.item.active
+                                a FAQ
+                //- questions
+                .questions
+                    .container
+                        h2.main-title ВОПРОСЫ И ОТВЕТЫ
+                        .questions__wrapper
+                            ul.list.list--left
+                                li.item.show
+                                    .item__head
+                                        span.item__number 1
+                                        p Большая часть текста сделана из разделов 1.10.32–3 книги Цицерона “Добра и Зла”?
+                                        picture
+                                            img(src="images/svg/arrow-red.svg" alt="")
+                                    .item__content
+                                        p Находка присваивается Ричарду МакКлинтоку (Richard McClintock), филологу, руководителю публикаций в колледже Хампден-Сидней, что в Вирджинии; он искал «citings consectetur» в классической латинской литературе, термин, который встречается удивительно редко в том литературном тексте.
+                                li.item.show
+                                    .item__head
+                                        span.item__number 2
+                                        p Вспомните новостные блоги, где информация публикуется каждый час в живом порядке?
+                                        picture
+                                            img(src="images/svg/arrow-red.svg" alt="")
+                                    .item__content
+                                        p Находка присваивается Ричарду МакКлинтоку (Richard McClintock), филологу, руководителю публикаций в колледже Хампден-Сидней, что в Вирджинии; он искал «citings consectetur» в классической латинской литературе, термин, который встречается удивительно редко в том литературном тексте.
+                                li.item.show
+                                    .item__head
+                                        span.item__number 3
+                                        p Вспомните новостные блоги, где информация публикуется каждый час в живом порядке?
+                                        picture
+                                            img(src="images/svg/arrow-red.svg" alt="")
+                                    .item__content
+                                        p Таким образом сложившаяся структура организации способствует подготовки и реализации новых предложений?
+                            ul.list.list--right
+                                li.item.show
+                                    .item__head
+                                        span.item__number 1
+                                        p Большая часть текста сделана из разделов 1.10.32–3 книги Цицерона “Добра и Зла”?
+                                        picture
+                                            img(src="images/svg/arrow-red.svg" alt="")
+                                    .item__content
+                                        p Находка присваивается Ричарду МакКлинтоку (Richard McClintock), филологу, руководителю публикаций в колледже Хампден-Сидней, что в Вирджинии; он искал «citings consectetur» в классической латинской литературе, термин, который встречается удивительно редко в том литературном тексте.
+                                li.item.show
+                                    .item__head
+                                        span.item__number 2
+                                        p Вспомните новостные блоги, где информация публикуется каждый час в живом порядке?
+                                        picture
+                                            img(src="images/svg/arrow-red.svg" alt="")
+                                    .item__content
+                                        p Находка присваивается Ричарду МакКлинтоку (Richard McClintock), филологу, руководителю публикаций в колледже Хампден-Сидней, что в Вирджинии; он искал «citings consectetur» в классической латинской литературе, термин, который встречается удивительно редко в том литературном тексте.
+                                li.item.show
+                                    .item__head
+                                        span.item__number 3
+                                        p Вспомните новостные блоги, где информация публикуется каждый час в живом порядке?
+                                        picture
+                                            img(src="images/svg/arrow-red.svg" alt="")
+                                    .item__content
+                                        p Таким образом сложившаяся структура организации способствует подготовки и реализации новых предложений?
+                                li.item.show
+                                    .item__head
+                                        span.item__number 3
+                                        p Вспомните новостные блоги, где информация публикуется каждый час в живом порядке?
+                                        picture
+                                            img(src="images/svg/arrow-red.svg" alt="")
+                                    .item__content
+                                        p Таким образом сложившаяся структура организации способствует подготовки и реализации новых предложений?
+
+
+
+        include modules/footer.pug
+        //- include modules/menu-mobile.pug
+        include modules/script.pug

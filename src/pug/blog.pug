@@ -1,0 +1,117 @@
+doctype html
+html(lang="ru")
+    head
+        include modules/head.pug
+    body
+        .content
+            include modules/header.pug
+
+            main
+                //- breadcrumbs
+                .breadcrumbs
+                    .container
+                        ul.list
+                            li.item
+                                a(href="index.html") Главная
+                            li.item
+                                img(src="../images/svg/arrow-red.svg" alt="")
+                            li.item.active
+                                a БЛОГ
+                //- blog
+                .blog.blog--mode
+                    .container
+                        .blog__wrapper
+                            h2.main-title Блог
+                            ul.list
+                                li.item
+                                    picture
+                                        img(src="images/blog/item1.jpg" alt="")
+                                    .row
+                                        span.name Бесконтактная доставка букетов
+                                    .row
+                                        p.date 
+                                            img(src="images/svg/clock.svg" alt="")
+                                            span 17 авг 2020
+                                        a(href="") Читать
+                                li.item
+                                    picture
+                                        img(src="images/blog/item2.jpg" alt="")
+                                    .row
+                                        span.name Изменение в графиках работы магазинов сети (обновлено)
+                                    .row
+                                        p.date 
+                                            img(src="images/svg/clock.svg" alt="")
+                                            span 17 авг 2020
+                                        a(href="") Читать
+
+                                li.item
+                                    picture
+                                        img(src="images/blog/item3.jpg" alt="")
+                                    .row
+                                        span.name Свадебный букет невесты в традициях разных стран
+                                    .row
+                                        p.date 
+                                            img(src="images/svg/clock.svg" alt="")
+                                            span 17 авг 2020
+                                        a(href="") Читать
+
+                                li.item
+                                    picture
+                                        img(src="images/blog/item4.jpg" alt="")
+                                    .row
+                                        span.name Интересные факты о цветах
+                                    .row
+                                        p.date 
+                                            img(src="images/svg/clock.svg" alt="")
+                                            span 17 авг 2020
+                                        a(href="") Читать
+
+                                li.item
+                                    picture
+                                        img(src="images/blog/item1.jpg" alt="")
+                                    .row
+                                        span.name Бесконтактная доставка букетов
+                                    .row
+                                        p.date 
+                                            img(src="images/svg/clock.svg" alt="")
+                                            span 17 авг 2020
+                                        a(href="") Читать
+                                li.item
+                                    picture
+                                        img(src="images/blog/item2.jpg" alt="")
+                                    .row
+                                        span.name Изменение в графиках работы магазинов сети (обновлено)
+                                    .row
+                                        p.date 
+                                            img(src="images/svg/clock.svg" alt="")
+                                            span 17 авг 2020
+                                        a(href="") Читать
+
+                                li.item
+                                    picture
+                                        img(src="images/blog/item3.jpg" alt="")
+                                    .row
+                                        span.name Свадебный букет невесты в традициях разных стран
+                                    .row
+                                        p.date 
+                                            img(src="images/svg/clock.svg" alt="")
+                                            span 17 авг 2020
+                                        a(href="") Читать
+
+                                li.item
+                                    picture
+                                        img(src="images/blog/item4.jpg" alt="")
+                                    .row
+                                        span.name Интересные факты о цветах
+                                    .row
+                                        p.date 
+                                            img(src="images/svg/clock.svg" alt="")
+                                            span 17 авг 2020
+                                        a(href="") Читать
+                            a.link-button.link-button--mode(href="") Больше новостей
+
+
+
+        include modules/footer.pug
+        //- include modules/menu-mobile.pug
+        include modules/script.pug

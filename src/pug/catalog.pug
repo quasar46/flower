@@ -1,0 +1,487 @@
+doctype html
+html(lang="ru")
+    head
+        include modules/head.pug
+    body
+        .content
+            include modules/header.pug
+
+            main
+                //- breadcrumbs
+                .breadcrumbs
+                    .container
+                        ul.list
+                            li.item
+                                a(href="index.html") Главная
+                            li.item
+                                img(src="../images/svg/arrow-red.svg" alt="")
+                            li.item.active
+                                a КАТАЛОГ
+                //- catalog
+                .catalog
+                    .container
+                        .catalog__title
+                            button.catalog__filter-btn Фильтры
+                            h2.main-title Каталог
+                            button.catalog__sort-btn 
+                                select
+                                    option Сортировка
+                                    option Сортировка
+                                    option Сортировка
+                        .catalog__content
+                            //- catalog__filters
+                            .catalog__filters
+                                .catalog__price
+                                    p.title СТОИМОСТЬ, ₽
+                                    //- slide
+                                    ul.list
+                                        li.slide
+                                            span.dot.dot--2
+                                            span.dot.dot--1
+                                        li.inputs
+                                            input(type="text" placeholder="до 30 000")
+                                            input(type="text" placeholder="от 0")
+                                .catalog__filter
+                                    p.title
+                                        span.show ЦВЕТЫ В БУКЕТЕ
+                                    ul.list.list--mode
+                                        li
+                                            button Розы
+                                        li
+                                            button Архидеи
+                                        li
+                                            button Хризантемы
+                                        li
+                                            button Ромашки
+                                        li
+                                            button Тюльпаны
+                                        li
+                                            button Ирисы
+                                        li
+                                            button Лилии
+                                        li
+                                            button Эустомы
+                                        li
+                                            button Герберы
+                                .catalog__filter
+                                    p.title.show
+                                        span ДЛЯ КОГО БУКЕТ
+                                    ul.list
+                                        li.item
+                                            input(type="checkbox" id="check1")
+                                            label(for="check1") Девушке
+                                        li.item
+                                            input(type="checkbox" id="check2")
+                                            label(for="check2") Жене
+                                        li.item
+                                            input(type="checkbox" id="check3")
+                                            label(for="check3") Маме
+                                        li.item
+                                            input(type="checkbox" id="check4")
+                                            label(for="check4") Коллеге
+                                        li.item
+                                            input(type="checkbox" id="check5")
+                                            label(for="check5") Любимой
+                                        li.item
+                                            input(type="checkbox" id="check6")
+                                            label(for="check6") Директору
+                                        li.item
+                                            input(type="checkbox" id="check7")
+                                            label(for="check7") Дочери
+                                        li.item
+                                            input(type="checkbox" id="check8")
+                                            label(for="check8") Учителю
+                                .catalog__filter
+                                    p.title.show
+                                        span СОБЫТИЕ
+                                    ul.list
+                                        li.item
+                                            input(type="checkbox" id="check9")
+                                            label(for="check9") Свидание
+                                        li.item
+                                            input(type="checkbox" id="check10")
+                                            label(for="check10") Свадьба
+                                        li.item
+                                            input(type="checkbox" id="check11")
+                                            label(for="check11") 8 марта
+                                        li.item
+                                            input(type="checkbox" id="check12")
+                                            label(for="check12") 14 февраля
+                                        li.item
+                                            input(type="checkbox" id="check13")
+                                            label(for="check13") День матери
+                                        li.item
+                                            input(type="checkbox" id="check14")
+                                            label(for="check14") Годовщина свадьбы
+                                        li.item
+                                            input(type="checkbox" id="check15")
+                                            label(for="check15") День рождения
+                                        li.item
+                                            input(type="checkbox" id="check16")
+                                            label(for="check16") Выпускной
+                                .catalog__filter
+                                    p.title.show
+                                        span РАЗМЕРЫ
+                                    ul.list
+                                        li.item
+                                            input(type="checkbox" id="check17")
+                                            label(for="check17") Мини
+                                        li.item
+                                            input(type="checkbox" id="check18")
+                                            label(for="check18") Стандарт
+                                        li.item
+                                            input(type="checkbox" id="check19")
+                                            label(for="check19") Мега
+                                .catalog__filter
+                                    p.title.show
+                                        span ЦВЕТ
+                                    ul.list.list--color
+                                        li.item
+                                            button.color.color--1
+                                        li.item
+                                            button.color.color--2
+                                        li.item
+                                            button.color.color--3
+                                        li.item
+                                            button.color.color--4
+                                        li.item
+                                            button.color.color--5
+                                .catalog__buttons
+                                    input(type="reset" value="Сбросить")
+                                    input(type="submit" value="Применить")
+
+                            //- catalog__items
+                            .catalog__items
+                                .valentin-wrapper
+                                    .valentin-wrapper-list
+                                        //- cart
+                                        .item
+                                            div
+                                                picture
+                                                    img(src="images/item1.jpg" alt="")
+                                                    button.item__favorite
+                                                        img(src="images/svg/heart.svg" alt="")
+                                                .valentin-wrapper-list__bottom
+                                                    .valentin-wrapper-list__row
+                                                        h3.valentin-wrapper-list__name Композиция Рассвет в кашпо
+                                                        .valentin-wrapper-list__price 
+                                                            span.valentin-wrapper-list__price-current 2 490 ₽
+                                                    .valentin-wrapper-list__row
+                                                        a(href="").valentin-wrapper-list__comments
+                                                            img(src="images/svg/comments.svg" alt="")
+                                                            span.valentin-wrapper-list__count 15
+                                                        button.valentin-wrapper-list__add В корзину
+                                                    .valentin-wrapper-list__row-mobile
+                                                        .valentin-wrapper-list__price-mobile
+                                                            span.valentin-wrapper-list__price-current 2 490 ₽
+                                                        button.valentin-wrapper-list__add
+                                        //- cart
+                                        .item
+                                            div
+                                                picture
+                                                    img(src="images/item2.jpg" alt="")
+                                                    button.item__favorite
+                                                        img(src="images/svg/heart.svg" alt="")
+                                                .valentin-wrapper-list__bottom
+                                                    .valentin-wrapper-list__row
+                                                        h3.valentin-wrapper-list__name Композиция Рассвет в кашпо
+                                                        .valentin-wrapper-list__price
+                                                            span.valentin-wrapper-list__price-current 2 490 ₽
+                                                    .valentin-wrapper-list__row
+                                                        a(href="").valentin-wrapper-list__comments
+                                                            img(src="images/svg/comments.svg" alt="")
+                                                            span.valentin-wrapper-list__count 15
+                                                        button.valentin-wrapper-list__add В корзину
+                                                    .valentin-wrapper-list__row-mobile
+                                                        .valentin-wrapper-list__price-mobile
+                                                            span.valentin-wrapper-list__price-current 2 490 ₽
+                                                        button.valentin-wrapper-list__add
+                                        //- cart
+                                        .item
+                                            div
+                                                picture
+                                                    img(src="images/item3.jpg" alt="")
+                                                    button.item__favorite
+                                                        img(src="images/svg/heart.svg" alt="")
+                                                .valentin-wrapper-list__bottom
+                                                    .valentin-wrapper-list__row
+                                                        h3.valentin-wrapper-list__name Букет с пионами Радости жизни в шляпной коробке
+                                                        .valentin-wrapper-list__price
+                                                            span.valentin-wrapper-list__price-old 1 490 ₽
+                                                            span.valentin-wrapper-list__price-new 490 ₽
+                                                    .valentin-wrapper-list__row
+                                                        a(href="").valentin-wrapper-list__comments
+                                                            img(src="images/svg/comments.svg" alt="")
+                                                            span.valentin-wrapper-list__count 15
+                                                        button.valentin-wrapper-list__add В корзину
+                                                    .valentin-wrapper-list__row-mobile
+                                                        .valentin-wrapper-list__price-mobile
+                                                            span.valentin-wrapper-list__price-old 1 490 ₽
+                                                            span.valentin-wrapper-list__price-new 490 ₽
+                                                        button.valentin-wrapper-list__add
+                                        //- cart
+                                        .item
+                                            div
+                                                picture
+                                                    img(src="images/item4.jpg" alt="")
+                                                    button.item__favorite
+                                                        img(src="images/svg/heart.svg" alt="")
+                                                .valentin-wrapper-list__bottom
+                                                    .valentin-wrapper-list__row
+                                                        h3.valentin-wrapper-list__name Композиция Рассвет в кашпо
+                                                        span.valentin-wrapper-list__price 2 490 ₽
+                                                    .valentin-wrapper-list__row
+                                                        a(href="").valentin-wrapper-list__comments
+                                                            img(src="images/svg/comments.svg" alt="")
+                                                            span.valentin-wrapper-list__count 15
+                                                        button.valentin-wrapper-list__add В корзину
+                                                    .valentin-wrapper-list__row-mobile
+                                                        .valentin-wrapper-list__price-mobile
+                                                            span.valentin-wrapper-list__price-current 2 490 ₽
+                                                        button.valentin-wrapper-list__add
+                                        //- cart
+                                        .item
+                                            div
+                                                picture
+                                                    img(src="images/item1.jpg" alt="")
+                                                    button.item__favorite
+                                                        img(src="images/svg/heart.svg" alt="")
+                                                .valentin-wrapper-list__bottom
+                                                    .valentin-wrapper-list__row
+                                                        h3.valentin-wrapper-list__name Композиция Рассвет в кашпо
+                                                        .valentin-wrapper-list__price 
+                                                            span.valentin-wrapper-list__price-current 2 490 ₽
+                                                    .valentin-wrapper-list__row
+                                                        a(href="").valentin-wrapper-list__comments
+                                                            img(src="images/svg/comments.svg" alt="")
+                                                            span.valentin-wrapper-list__count 15
+                                                        button.valentin-wrapper-list__add В корзину
+                                                    .valentin-wrapper-list__row-mobile
+                                                        .valentin-wrapper-list__price-mobile
+                                                            span.valentin-wrapper-list__price-current 2 490 ₽
+                                                        button.valentin-wrapper-list__add
+                                        //- cart
+                                        .item
+                                            div
+                                                picture
+                                                    img(src="images/item2.jpg" alt="")
+                                                    button.item__favorite
+                                                        img(src="images/svg/heart.svg" alt="")
+                                                .valentin-wrapper-list__bottom
+                                                    .valentin-wrapper-list__row
+                                                        h3.valentin-wrapper-list__name Композиция Рассвет в кашпо
+                                                        .valentin-wrapper-list__price
+                                                            span.valentin-wrapper-list__price-current 2 490 ₽
+                                                    .valentin-wrapper-list__row
+                                                        a(href="").valentin-wrapper-list__comments
+                                                            img(src="images/svg/comments.svg" alt="")
+                                                            span.valentin-wrapper-list__count 15
+                                                        button.valentin-wrapper-list__add В корзину
+                                                    .valentin-wrapper-list__row-mobile
+                                                        .valentin-wrapper-list__price-mobile
+                                                            span.valentin-wrapper-list__price-current 2 490 ₽
+                                                        button.valentin-wrapper-list__add
+                                        //- cart
+                                        .item
+                                            div
+                                                picture
+                                                    img(src="images/item3.jpg" alt="")
+                                                    button.item__favorite
+                                                        img(src="images/svg/heart.svg" alt="")
+                                                .valentin-wrapper-list__bottom
+                                                    .valentin-wrapper-list__row
+                                                        h3.valentin-wrapper-list__name Букет с пионами Радости жизни в шляпной коробке
+                                                        .valentin-wrapper-list__price
+                                                            span.valentin-wrapper-list__price-old 1 490 ₽
+                                                            span.valentin-wrapper-list__price-new 490 ₽
+                                                    .valentin-wrapper-list__row
+                                                        a(href="").valentin-wrapper-list__comments
+                                                            img(src="images/svg/comments.svg" alt="")
+                                                            span.valentin-wrapper-list__count 15
+                                                        button.valentin-wrapper-list__add В корзину
+                                                    .valentin-wrapper-list__row-mobile
+                                                        .valentin-wrapper-list__price-mobile
+                                                            span.valentin-wrapper-list__price-old 1 490 ₽
+                                                            span.valentin-wrapper-list__price-new 490 ₽
+                                                        button.valentin-wrapper-list__add
+                                        //- cart
+                                        .item
+                                            div
+                                                picture
+                                                    img(src="images/item4.jpg" alt="")
+                                                    button.item__favorite
+                                                        img(src="images/svg/heart.svg" alt="")
+                                                .valentin-wrapper-list__bottom
+                                                    .valentin-wrapper-list__row
+                                                        h3.valentin-wrapper-list__name Композиция Рассвет в кашпо
+                                                        span.valentin-wrapper-list__price 2 490 ₽
+                                                    .valentin-wrapper-list__row
+                                                        a(href="").valentin-wrapper-list__comments
+                                                            img(src="images/svg/comments.svg" alt="")
+                                                            span.valentin-wrapper-list__count 15
+                                                        button.valentin-wrapper-list__add В корзину
+                                                    .valentin-wrapper-list__row-mobile
+                                                        .valentin-wrapper-list__price-mobile
+                                                            span.valentin-wrapper-list__price-current 2 490 ₽
+                                                        button.valentin-wrapper-list__add
+                                        //- cart
+                                        .item
+                                            div
+                                                picture
+                                                    img(src="images/item1.jpg" alt="")
+                                                    button.item__favorite
+                                                        img(src="images/svg/heart.svg" alt="")
+                                                .valentin-wrapper-list__bottom
+                                                    .valentin-wrapper-list__row
+                                                        h3.valentin-wrapper-list__name Композиция Рассвет в кашпо
+                                                        .valentin-wrapper-list__price 
+                                                            span.valentin-wrapper-list__price-current 2 490 ₽
+                                                    .valentin-wrapper-list__row
+                                                        a(href="").valentin-wrapper-list__comments
+                                                            img(src="images/svg/comments.svg" alt="")
+                                                            span.valentin-wrapper-list__count 15
+                                                        button.valentin-wrapper-list__add В корзину
+                                                    .valentin-wrapper-list__row-mobile
+                                                        .valentin-wrapper-list__price-mobile
+                                                            span.valentin-wrapper-list__price-current 2 490 ₽
+                                                        button.valentin-wrapper-list__add
+                                        //- cart
+                                        .item
+                                            div
+                                                picture
+                                                    img(src="images/item2.jpg" alt="")
+                                                    button.item__favorite
+                                                        img(src="images/svg/heart.svg" alt="")
+                                                .valentin-wrapper-list__bottom
+                                                    .valentin-wrapper-list__row
+                                                        h3.valentin-wrapper-list__name Композиция Рассвет в кашпо
+                                                        .valentin-wrapper-list__price
+                                                            span.valentin-wrapper-list__price-current 2 490 ₽
+                                                    .valentin-wrapper-list__row
+                                                        a(href="").valentin-wrapper-list__comments
+                                                            img(src="images/svg/comments.svg" alt="")
+                                                            span.valentin-wrapper-list__count 15
+                                                        button.valentin-wrapper-list__add В корзину
+                                                    .valentin-wrapper-list__row-mobile
+                                                        .valentin-wrapper-list__price-mobile
+                                                            span.valentin-wrapper-list__price-current 2 490 ₽
+                                                        button.valentin-wrapper-list__add
+                                        //- cart
+                                        .item
+                                            div
+                                                picture
+                                                    img(src="images/item3.jpg" alt="")
+                                                    button.item__favorite
+                                                        img(src="images/svg/heart.svg" alt="")
+                                                .valentin-wrapper-list__bottom
+                                                    .valentin-wrapper-list__row
+                                                        h3.valentin-wrapper-list__name Букет с пионами Радости жизни в шляпной коробке
+                                                        .valentin-wrapper-list__price
+                                                            span.valentin-wrapper-list__price-old 1 490 ₽
+                                                            span.valentin-wrapper-list__price-new 490 ₽
+                                                    .valentin-wrapper-list__row
+                                                        a(href="").valentin-wrapper-list__comments
+                                                            img(src="images/svg/comments.svg" alt="")
+                                                            span.valentin-wrapper-list__count 15
+                                                        button.valentin-wrapper-list__add В корзину
+                                                    .valentin-wrapper-list__row-mobile
+                                                        .valentin-wrapper-list__price-mobile
+                                                            span.valentin-wrapper-list__price-old 1 490 ₽
+                                                            span.valentin-wrapper-list__price-new 490 ₽
+                                                        button.valentin-wrapper-list__add
+                                        //- cart
+                                        .item
+                                            div
+                                                picture
+                                                    img(src="images/item4.jpg" alt="")
+                                                    button.item__favorite
+                                                        img(src="images/svg/heart.svg" alt="")
+                                                .valentin-wrapper-list__bottom
+                                                    .valentin-wrapper-list__row
+                                                        h3.valentin-wrapper-list__name Композиция Рассвет в кашпо
+                                                        span.valentin-wrapper-list__price 2 490 ₽
+                                                    .valentin-wrapper-list__row
+                                                        a(href="").valentin-wrapper-list__comments
+                                                            img(src="images/svg/comments.svg" alt="")
+                                                            span.valentin-wrapper-list__count 15
+                                                        button.valentin-wrapper-list__add В корзину
+                                                    .valentin-wrapper-list__row-mobile
+                                                        .valentin-wrapper-list__price-mobile
+                                                            span.valentin-wrapper-list__price-current 2 490 ₽
+                                                        button.valentin-wrapper-list__add
+                                        //- cart
+                                        .item
+                                            div
+                                                picture
+                                                    img(src="images/item1.jpg" alt="")
+                                                    button.item__favorite
+                                                        img(src="images/svg/heart.svg" alt="")
+                                                .valentin-wrapper-list__bottom
+                                                    .valentin-wrapper-list__row
+                                                        h3.valentin-wrapper-list__name Композиция Рассвет в кашпо
+                                                        .valentin-wrapper-list__price 
+                                                            span.valentin-wrapper-list__price-current 2 490 ₽
+                                                    .valentin-wrapper-list__row
+                                                        a(href="").valentin-wrapper-list__comments
+                                                            img(src="images/svg/comments.svg" alt="")
+                                                            span.valentin-wrapper-list__count 15
+                                                        button.valentin-wrapper-list__add В корзину
+                                                    .valentin-wrapper-list__row-mobile
+                                                        .valentin-wrapper-list__price-mobile
+                                                            span.valentin-wrapper-list__price-current 2 490 ₽
+                                                        button.valentin-wrapper-list__add
+                                        //- cart
+                                        .item
+                                            div
+                                                picture
+                                                    img(src="images/item2.jpg" alt="")
+                                                    button.item__favorite
+                                                        img(src="images/svg/heart.svg" alt="")
+                                                .valentin-wrapper-list__bottom
+                                                    .valentin-wrapper-list__row
+                                                        h3.valentin-wrapper-list__name Композиция Рассвет в кашпо
+                                                        .valentin-wrapper-list__price
+                                                            span.valentin-wrapper-list__price-current 2 490 ₽
+                                                    .valentin-wrapper-list__row
+                                                        a(href="").valentin-wrapper-list__comments
+                                                            img(src="images/svg/comments.svg" alt="")
+                                                            span.valentin-wrapper-list__count 15
+                                                        button.valentin-wrapper-list__add В корзину
+                                                    .valentin-wrapper-list__row-mobile
+                                                        .valentin-wrapper-list__price-mobile
+                                                            span.valentin-wrapper-list__price-current 2 490 ₽
+                                                        button.valentin-wrapper-list__add
+                                        //- cart
+                                        .item
+                                            div
+                                                picture
+                                                    img(src="images/item3.jpg" alt="")
+                                                    button.item__favorite
+                                                        img(src="images/svg/heart.svg" alt="")
+                                                .valentin-wrapper-list__bottom
+                                                    .valentin-wrapper-list__row
+                                                        h3.valentin-wrapper-list__name Букет с пионами Радости жизни в шляпной коробке
+                                                        .valentin-wrapper-list__price
+                                                            span.valentin-wrapper-list__price-old 1 490 ₽
+                                                            span.valentin-wrapper-list__price-new 490 ₽
+                                                    .valentin-wrapper-list__row
+                                                        a(href="").valentin-wrapper-list__comments
+                                                            img(src="images/svg/comments.svg" alt="")
+                                                            span.valentin-wrapper-list__count 15
+                                                        button.valentin-wrapper-list__add В корзину
+                                                    .valentin-wrapper-list__row-mobile
+                                                        .valentin-wrapper-list__price-mobile
+                                                            span.valentin-wrapper-list__price-old 1 490 ₽
+                                                            span.valentin-wrapper-list__price-new 490 ₽
+                                                        button.valentin-wrapper-list__add
+
+
+                                    a.button.button__style(href="") Показать ещё
+
+
+
+
+
+        include modules/footer.pug
+        //- include modules/menu-mobile.pug
+        include modules/script.pug

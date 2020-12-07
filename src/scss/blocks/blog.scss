@@ -1,0 +1,160 @@
+.blog {
+    background-color: $color-white;
+    padding: 100px 0;
+    // margin-bottom: 100px;
+    //- убрал, т.к. на главной в блоге не нужен этот отступ
+    @media (max-width: 1919px) {
+        padding: 35px 0;
+    }
+    @media (max-width: 1023px) {
+        background-color: #fafafa;
+    }
+}
+
+.blog__wrapper {
+    padding: 0 150px;
+    display: flex;
+    flex-direction: column;
+    .list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .item {
+            display: flex;
+            flex-direction: column;
+            max-width: 339px;
+            flex: 1 0 auto;
+            margin-bottom: 50px;
+            picture {
+                margin-bottom: 20px;
+                @media (max-width: 1919px) {
+                    margin-bottom: 15px;
+                }
+                @media (max-width: 1023px) {
+                    margin-bottom: 20px;
+                }
+            }
+            .row {
+                @media (max-width: 1023px) {
+                    padding: 0 15px;
+                }
+            }
+            .row:last-child {
+                margin-top: auto;
+                display: flex;
+                justify-content: space-between;
+            }
+            .row:nth-child(2) {
+                padding-bottom: 40px;
+                @media (max-width: 1023px) {
+                    padding-bottom: 25px;
+                }
+            }
+            .name {
+                font-size: 24px;
+                font-family: $font-add;
+                @media (max-width: 1919px) {
+                    font-size: 14px;
+                    text-align: center;
+                    display: block;
+                }
+            }
+            .date {
+                position: relative;
+                // padding-left: 30px;
+                display: flex;
+                align-items: center;
+                img {
+                    margin-right: 10px;
+                }
+                // &::before {
+                //     content: "";
+                //     position: absolute;
+                //     width: 20px;
+                //     height: 20px;
+                //     background-image: url("../images/svg/clock.svg");
+                //     background-size: cover;
+                //     top: 50%;
+                //     transform: translateY(-50%);
+                //     left: 0;
+                // }
+                @media (max-width: 1919px) {
+                    font-size: 14px;
+                }
+                @media (max-width: 1023px) {
+                    font-size: 12px;
+                }
+            }
+            a {
+                text-transform: uppercase;
+                text-decoration: none;
+                padding-right: 15px;
+                position: relative;
+                color: $color-text;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 7px;
+                    height: 12px;
+                    top: 50%;
+                    right: 0;
+                    transform: translateY(-50%);
+                    background-image: url("../images/svg/arrow.svg");
+                    background-size: cover;
+                }
+                @media (max-width: 1023px) {
+                    font-size: 14px;
+                }
+            }
+            @media (max-width: 1919px) {
+                max-width: 213px;
+            }
+            @media (max-width: 1023px) {
+                margin: 0;
+                max-width: 216px;
+                height: auto;
+                margin-bottom: 10px;
+                background-color: #fff;
+                padding-bottom: 25px;
+            }
+            @media (max-width: 400px) {
+                max-width: 100%;
+            }
+        }
+        @media (max-width: 1023px) {
+            margin: 0;
+        }
+    }
+    .link-button {
+        position: relative;
+        font-weight: 300;
+        text-decoration: none;
+        color: #333;
+        text-transform: uppercase;
+        background-color: #fff;
+        line-height: 50px;
+        border: 1px solid #c4c4c4;
+        padding: 0 45px 0 30px;
+        align-self: center;
+        background-image: url(../images/svg/arrow.svg);
+        background-size: 7px auto;
+        background-repeat: no-repeat;
+        background-position: 90% center;
+        &--mode {
+            background-image: url(../images/svg/arrow-down.svg);
+            background-size: 12px auto;
+        }
+        @media (max-width: 1919px) {
+            line-height: 40px;
+            font-size: 14px;
+        }
+    }
+    .slick-track {
+        @media (max-width: 1023px) {
+            display: flex;
+        }
+    }
+    @media (max-width: 1919px) {
+        padding: 0;
+    }
+}

@@ -1,0 +1,90 @@
+.cart-description-order {
+    display: none;
+    flex-direction: column;
+    @media (max-width: 1023px) {
+        display: flex;
+    }
+}
+
+.cart-description-order__buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    button {
+        background-color: $color-white;
+        border: 1px solid $color-grey;
+        height: 40px;
+        max-width: 210px;
+        flex: 1 0 auto;
+        text-transform: uppercase;
+        padding-left: 30px;
+        font-weight: 300;
+        &.quick-order {
+            background-image: url("../images/svg/click-active.svg");
+            background-size: 17px auto;
+            background-position: 20px center;
+            background-repeat: no-repeat;
+            &:hover {
+                background-image: url("../images/svg/click.svg");
+                background-color: $color-orange;
+                color: $color-white;
+            }
+            @media (max-width: 400px) {
+                margin-bottom: 10px;
+                background-position: 60px center;
+            }
+        }
+        &.add-basket {
+            background-image: url("../images/svg/basket.svg");
+            background-size: 24px auto;
+            background-position: 20px center;
+            background-repeat: no-repeat;
+            &:hover {
+                background-image: url("../images/svg/basket-white.svg");
+                background-color: $color-orange;
+                color: $color-white;
+            }
+            @media (max-width: 400px) {
+                background-position: 70px center;
+            }
+        }
+        @media (max-width: 400px) {
+            max-width: 100%;
+        }
+    }
+    @media (max-width: 400px) {
+        flex-direction: column;
+    }
+}
+
+.cart-description-order__list {
+    display: flex;
+    flex-wrap: wrap;
+    .item {
+        max-width: 50%;
+        flex: 1 0 auto;
+        margin-bottom: 20px;
+        display: flex;
+        font-size: 14px;
+        span {
+            text-decoration: underline;
+            @media (max-width: 1023px) {
+                font-size: 14px;
+            }
+        }
+        picture {
+            max-width: 25px;
+            flex: 1 0 auto;
+            text-align: center;
+            margin-right: 15px;
+        }
+        @media (max-width: 400px) {
+            max-width: 100%;
+        }
+    }
+    @media (max-width: 400px) {
+        flex-direction: column;
+        max-width: 217px;
+        margin: 0 auto;
+    }
+}
